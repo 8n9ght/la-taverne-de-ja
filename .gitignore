@@ -1,16 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
+/la-taverne/node_modules
+/la-taverne-api/node_modules
 
 # dev
-/src
-/public
+/la-taverne/src
+/la-taverne/public
 
 
 # misc
