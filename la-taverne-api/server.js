@@ -17,7 +17,7 @@ const userRouter = require('./routes/user')
 
 
 const corsOptions = {
-  origin: process.env.NODE_ENV === "development" ? 'http://localhost:3000' : 'https://main.dk7gprial9kim.amplifyapp.com',
+  origin: process.env.NODE_ENV === "development" ? 'http://localhost:3000' : 'https://www.la-taverne-de-ja.fr',
   credentials: true,
 };
 
