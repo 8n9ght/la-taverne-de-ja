@@ -3,26 +3,27 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+let apiUrl;
+let ordersUrl;
+
+let user = localStorage.getItem("identifier");
+
+if (process.env.NODE_ENV === "development") {
+  apiUrl = "http://localhost:5000/cocktails/";
+} else {
+  apiUrl = "https://ineedadrink.onrender.com/cocktails/";
+}
+
+if (process.env.NODE_ENV === "development") {
+  ordersUrl = "http://localhost:5000/orders/";
+} else {
+  ordersUrl = "https://ineedadrink.onrender.com/orders/";
+}
+
 function Cocktails() {
 
   const [drinks, setDrinks] = useState([]);
 
-  let apiUrl;
-  let ordersUrl;
-
-  let user = localStorage.getItem("identifier");
-
-  if (process.env.NODE_ENV === "development") {
-    apiUrl = "http://localhost:5000/cocktails/";
-  } else {
-    apiUrl = "https://ineedadrink.onrender.com/cocktails/";
-  }
-
-  if (process.env.NODE_ENV === "development") {
-    ordersUrl = "http://localhost:5000/orders/";
-  } else {
-    ordersUrl = "https://ineedadrink.onrender.com/orders/";
-  }
 
   const handleOrder = (name, ingredients, client) => {
     axios.post(ordersUrl, { name, ingredients, client })
@@ -38,6 +39,8 @@ function Cocktails() {
     axios.get(apiUrl, { withCredentials: true }).then((res) => {
       setDrinks(res.data);
     });
+
+    return
   }, []);
 
   return (
@@ -57,7 +60,7 @@ function Cocktails() {
               <article className="drinkIngredients">
                 {drink.ingredients.map((igd, index) => {
                   return (
-                    <p key={Math.random()}>
+                    <p key={index}>
                       {igd}
                       {index < drink.ingredients.length - 1 ? "," : ""}
                     </p>
