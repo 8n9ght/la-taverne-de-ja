@@ -1,8 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Taverne",
+  "name": "La taverne de J-A",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#FFF7E1",
+  "icons": [
+    {
+      "src": "la-taverne-de-ja-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
