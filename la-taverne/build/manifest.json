@@ -1,8 +1,16 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "start_url": ".",
+  "name": "La Taverne de J-A",
+  "short_name": "Taverne",
+  "description": "Application de commande de boissons",
+  "start_url": "/index.html",
   "display": "standalone",
+  "background_color": "#FFF7E1",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "icons": [
+    {
+      "src": "/la-taverne-de-ja-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
