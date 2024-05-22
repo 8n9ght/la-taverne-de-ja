@@ -2,7 +2,7 @@
   "name": "La Taverne de J-A",
   "short_name": "Taverne",
   "description": "Application de commande de boissons",
-  "start_url": "/index.html",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#FFF7E1",
   "theme_color": "#000000",
