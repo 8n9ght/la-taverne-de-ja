@@ -5,7 +5,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFF7E1",
-  "theme_color": "#000000",
+  "theme_color": "#001D21",
   "icons": [
     {
       "src": "/la-taverne-de-ja-logo.png",
