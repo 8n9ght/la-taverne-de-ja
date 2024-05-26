@@ -1,6 +1,6 @@
 {
   "name": "La Taverne de J-A",
-  "short_name": "Taverne",
+  "short_name": "La Taverne",
   "description": "Application de commande de boissons",
   "start_url": ".",
   "display": "standalone",
