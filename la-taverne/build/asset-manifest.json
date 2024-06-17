@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab8586d0.css",
-    "main.js": "/static/js/main.cfa06c95.js",
+    "main.css": "/static/css/main.323a4ddc.css",
+    "main.js": "/static/js/main.15c132e8.js",
     "static/media/CaviarDreams_Italic.ttf": "/static/media/CaviarDreams_Italic.0c76ebb1c07ff05ceccc.ttf",
     "static/media/CaviarDreams.ttf": "/static/media/CaviarDreams.174b0a13f7e49c169450.ttf",
     "static/media/CaviarDreams_Bold.ttf": "/static/media/CaviarDreams_Bold.1062ba91167e0c325786.ttf",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.ab8586d0.css",
-    "static/js/main.cfa06c95.js"
+    "static/css/main.323a4ddc.css",
+    "static/js/main.15c132e8.js"
   ]
 }
